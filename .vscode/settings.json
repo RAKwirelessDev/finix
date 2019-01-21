@@ -1,5 +1,20 @@
 {
     "search.exclude": {
         "**/build": true
-    }
+    },
+    "files.exclude": {
+        "**/build": true,
+        "**/node_modules": true
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.statusBar.feedback.visible": false,
+    "breadcrumbs.enabled": true,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "search.showLineNumbers": true,
+    "search.useGlobalIgnoreFiles": true,
+    "search.smartCase": true,
+    "search.usePCRE2": true,
+    "blade.format.enable": true,
+    "php.validate.executablePath": "php"
 }

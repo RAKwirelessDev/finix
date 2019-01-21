@@ -1,6 +1,6 @@
 {
   "name": "finix",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "Modern HTTP web server index.",
   "homepage": "https://github.com/RAKWirelessDev/finix",
   "bugs": "https://github.com/RAKWirelessDev/finix/issues",
