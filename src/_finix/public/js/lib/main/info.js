@@ -22,17 +22,6 @@ const loginTpl =
                 Change it in '_finix/private/conf/options.json'.
             </div>
         </div>`;
-const supportTpl =
-        `<div id="support">
-            Show your support with a donation!
-            <div class="paypal">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                    <input type="hidden" name="cmd" value="_s-xclick"/>
-                    <input type="hidden" name="hosted_button_id" value="8WSPKWT7YBTSQ"/>
-                    <input type="image" src="${resource.image('paypal')}" name="submit" alt="PayPal"/>
-                </form>
-            </div>
-        </div>`;
 const setup = config.setup;
 
 
@@ -156,10 +145,6 @@ const onKeydown = ev => {
     }
 };
 
-const addSupport = () => {
-    dom(supportTpl).appTo('#content');
-};
-
 const addLogin = () => {
     dom(loginTpl).appTo('#content');
 
@@ -178,7 +163,6 @@ const addLogin = () => {
 };
 
 const init = () => {
-    addSupport();
     addLogin();
     addTests();
 };

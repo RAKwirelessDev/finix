@@ -5,10 +5,6 @@ const topbarTpl =
         `<div id="topbar">
             <div id="toolbar"></div>
             <div id="flowbar"></div>
-            <a id="backlink" href="https://larsjung.de/finix/" title="powered by finix - https://larsjung.de/finix/">
-                <div>powered</div>
-                <div>by finix</div>
-            </a>
         </div>`;
 const mainrowTpl =
         `<div id="mainrow">
