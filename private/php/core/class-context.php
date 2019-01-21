@@ -85,7 +85,7 @@ class Context {
             if ($part != '') {
                 if (PHP_OS === "WINNT"){
                     $encoded_parts[] = rawurlencode(mb_convert_encoding($part, "UTF-8", $nonUtf8Charset));
-                } else {
+                }else {
                     $encoded_parts[] = rawurlencode($part);
                 }
             }

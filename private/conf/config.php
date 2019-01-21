@@ -75,8 +75,7 @@ const _CONFIG_ = [
         "sizes" => [20, 40, 60, 80, 100, 140, 180, 220, 260, 300],
         "theme" => "comity",
         "unmanaged" => ["index.html", "index.htm", "index.php"],
-        "unmanagedInNewWindow" => false,
-        "nonUTF8charset" => "EUC-KR"
+        "unmanagedInNewWindow" => false
     ],
 
     /*** Extensions (in alphabetical order) ***/
@@ -178,7 +177,7 @@ const _CONFIG_ = [
     - qrColor: string, QR-Code fill color
     */
     "info" => [
-        "enabled" => false,
+        "enabled" => true,
         "show" => false,
         "qrcode" => true,
         "qrFill" => "#999",
