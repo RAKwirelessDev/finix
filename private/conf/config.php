@@ -1,6 +1,6 @@
 <?php
 
-$config = (object) [
+$config_options = (object) [
 
     /*
     Password hash.

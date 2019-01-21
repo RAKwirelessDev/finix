@@ -11,15 +11,15 @@ class Context {
     private $passhash;
 
     public function __construct($session, $request, $setup) {
-        global $config;
+        global $config_options;
 
         $this->session = $session;
         $this->request = $request;
         $this->setup = $setup;
 
-        $this->options = $config;
+        $this->options = $config_options;
 
-        echo json_encode($config);
+        echo json_encode($config_options);
         exit;
 
         $this->passhash = $this->query_option('passhash', '');
