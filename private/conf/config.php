@@ -20,7 +20,7 @@ $config_options = (object) [
     - scripts: array of strings
     - styles: array of strings
     */
-    "resources" => [
+    "resources" => (object) [
         "scripts" => [],
         "styles" => [
             "//fonts.googleapis.com/css?family=Ubuntu:300,400,700%7CUbuntu+Mono:400,700"
@@ -57,7 +57,7 @@ $config_options = (object) [
     - unmanaged: array of strings, don't manage folders containing one of those files
     - unmanagedInNewWindow: boolean, open unmanaged links in new window/tab
     */
-    "view" => [
+    "view" => (object) [
         "binaryPrefix" => false,
         "disableSidebar" => false,
         "fallbackMode" => false,
