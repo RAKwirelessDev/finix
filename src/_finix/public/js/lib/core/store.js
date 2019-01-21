@@ -1,5 +1,5 @@
 const store = global.window.localStorage;
-const storekey = '_h5ai';
+const storekey = '_finix';
 
 
 const load = () => {

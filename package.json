@@ -1,14 +1,14 @@
 {
-  "name": "h5ai",
-  "version": "0.29.0",
+  "name": "finix",
+  "version": "1.0.0",
   "description": "Modern HTTP web server index.",
-  "homepage": "https://larsjung.de/h5ai/",
-  "bugs": "https://github.com/lrsjng/h5ai/issues",
-  "author": "Lars Jung <lrsjng@gmail.com> (https://larsjung.de)",
+  "homepage": "https://github.com/RAKWirelessDev/finix",
+  "bugs": "https://github.com/RAKWirelessDev/finix/issues",
+  "author": "Phoenix Eve Aspacio <aspaciop@phoenixpeca.xyz> (https://www.phoenixpeca.xyz)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lrsjng/h5ai.git"
+    "url": "https://github.com/RAKWirelessDev/finix.git"
   },
   "scripts": {
     "build": "node ghu release"

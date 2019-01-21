@@ -6,4 +6,4 @@ with `<ext>` one of `svg`, `png` or `jpg`.
 
 To select a theme use the option `view > theme` in file `conf/options.json`.
 
-You will find the previously included icon themes [here](https://github.com/lrsjng/h5ai-themes).
+You will find the previously included icon themes [here](https://github.com/lrsjng/finix-themes).

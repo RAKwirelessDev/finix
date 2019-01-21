@@ -1,5 +1,5 @@
 const {test, assert, insp} = require('scar');
-const {naturalCmp} = require('../../../../src/_h5ai/public/js/lib/util');
+const {naturalCmp} = require('../../../../src/_finix/public/js/lib/util');
 
 test('util.naturalCmp()', () => {
     assert.equal(typeof naturalCmp, 'function', 'is function');

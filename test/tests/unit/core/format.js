@@ -1,5 +1,5 @@
 const {test, assert} = require('scar');
-const format = require('../../../../src/_h5ai/public/js/lib/core/format');
+const format = require('../../../../src/_finix/public/js/lib/core/format');
 
 test('core.format', () => {
     assert.equal(typeof format, 'object');

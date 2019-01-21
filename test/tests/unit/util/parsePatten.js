@@ -1,5 +1,5 @@
 const {test, assert, insp} = require('scar');
-const {parsePattern} = require('../../../../src/_h5ai/public/js/lib/util');
+const {parsePattern} = require('../../../../src/_finix/public/js/lib/util');
 
 test('util.parsePattern()', () => {
     assert.equal(typeof parsePattern, 'function', 'is function');

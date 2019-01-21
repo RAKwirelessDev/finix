@@ -1,7 +1,7 @@
 <?php
 
 class Session {
-    private static $KEY_PREFIX = '__H5AI__';
+    private static $KEY_PREFIX = '__finix__';
     private $store;
 
     public function __construct(&$store) {

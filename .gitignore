@@ -2,3 +2,4 @@ build
 local
 node_modules
 npm-debug.log
+test

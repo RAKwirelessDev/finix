@@ -151,7 +151,7 @@ class Context {
         }
 
         while ($path !== $this->setup->get('ROOT_PATH')) {
-            if (@is_dir($path . '/_h5ai/private/conf')) {
+            if (@is_dir($path . '/_finix/private/conf')) {
                 return false;
             }
             $parent_path = Util::normalize_path(dirname($path));

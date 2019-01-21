@@ -19,7 +19,7 @@ const loginTpl =
             <span id="logout">logout</span>
             <div id="hint">
                 The preset password is the empty string, just click login.
-                Change it in '_h5ai/private/conf/options.json'.
+                Change it in '_finix/private/conf/options.json'.
             </div>
         </div>`;
 const supportTpl =
@@ -53,7 +53,7 @@ const addTests = () => {
     dom(testsTpl).appTo('#content');
 
     addTest(
-        'h5ai version', 'Only green if this is an official h5ai release',
+        'finix version', 'Only green if this is an official finix release',
         (/^\d+\.\d+\.\d+$/).test(setup.VERSION), setup.VERSION
     );
 
