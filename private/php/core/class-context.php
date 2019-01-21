@@ -19,6 +19,9 @@ class Context {
 
         $this->options = $config;
 
+        echo json_encode($config);
+        exit;
+
         $this->passhash = $this->query_option('passhash', '');
         $this->options['hasCustomPasshash'] = strcasecmp($this->passhash, Context::$DEFAULT_PASSHASH) !== 0;
         unset($this->options['passhash']);
