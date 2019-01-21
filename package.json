@@ -21,7 +21,7 @@
     "jsdom": "9.4.2",
     "kjua": "0.1.1",
     "lolight": "0.3.0",
-    "marked": "0.3.6",
+    "marked": "^0.6.0",
     "normalize.css": "4.2.0",
     "null-loader": "0.1.1",
     "scar": "0.17.0"
