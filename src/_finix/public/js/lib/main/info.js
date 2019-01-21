@@ -17,10 +17,6 @@ const loginTpl =
             <input id="pass" type="password" placeholder="password"/>
             <span id="login">login</span>
             <span id="logout">logout</span>
-            <div id="hint">
-                The preset password is the empty string, just click login.
-                Change it in '_finix/private/conf/options.json'.
-            </div>
         </div>`;
 const setup = config.setup;
 
