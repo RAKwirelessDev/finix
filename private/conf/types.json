@@ -1,4 +1,4 @@
-/* finix v0.29.0 - https://larsjung.de/finix/ */
+/* finix - https://larsjung.de/finix/ */
 {
     "ar":               ["*.tar.bz2", "*.crx"],
     "ar-apk":           ["*.apk"],
