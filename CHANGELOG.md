@@ -104,7 +104,7 @@
 ## v0.26.0 - *2014-08-16*
 
 * remove True Type fonts
-* outsource themes to [h5ai-themes](https://github.com/lrsjng/h5ai-themes)
+* outsource themes to [finix-themes](https://github.com/lrsjng/finix-themes)
 * add filesize fallback for large files and 32bit PHP
 * fix server detection
 * add config file tests to info page
@@ -140,7 +140,7 @@
 * add initial theme support
 * add icons from [Evolvere Icon Theme](http://franksouza183.deviantart.com/art/Evolvere-Icon-theme-440718295)
 * add PHP variant to calc folder sizes
-* add scroll position reset on location change (issue [#279](https://github.com/lrsjng/h5ai/issues/279))
+* add scroll position reset on location change (issue [#279](https://github.com/lrsjng/finix/issues/279))
 * add option to hide unreadable files
 * add option where to place folders (top, inplace, bottom)
 * add markdown support for custom header and footer files
@@ -151,7 +151,7 @@
 * extend selectable icon sizes (add 128px, 192px, 256px, 384px)
 * improve preview GUI
 * disable thumbs in `cache` folder
-* fix QR code URI origin (issue [#287](https://github.com/lrsjng/h5ai/issues/287))
+* fix QR code URI origin (issue [#287](https://github.com/lrsjng/finix/issues/287))
 * replace PHP backtick operator with `exec`
 * remove server side file manipulation extensions `dropbox`, `delete` and `rename`
 * update `H5BP` to 4.3.0
@@ -166,7 +166,7 @@
 
 ## v0.24.1 - *2014-04-09*
 
-* security fixes! (issues [#268](https://github.com/lrsjng/h5ai/issues/268), [#269](https://github.com/lrsjng/h5ai/issues/269))
+* security fixes! (issues [#268](https://github.com/lrsjng/finix/issues/268), [#269](https://github.com/lrsjng/finix/issues/269))
 * fix WinOS command detection
 * update languages (`fi`, `fr`, `hi`, `it`, `zh-tw`)
 
@@ -223,7 +223,7 @@
 
 ## v0.22 - *2012-10-14*
 
-* general changes h5ai directory layout and configuration
+* general changes finix directory layout and configuration
 * splits configuration file (`config.json`) into files `options.json`, `types.json` and `langs.json`
 * localization now in separate files
 * adds auto-refresh
@@ -284,7 +284,7 @@
 ## v0.19 - *2012-04-19*
 
 * adds lots of config options
-* changes in `config.js` and `h5ai.htaccess`
+* changes in `config.js` and `finix.htaccess`
 * fixes js problems in IE 7+8
 * hides broken tree view in IE < 9, adds a message to the footer
 * removes hash changes since they break logical browser history
@@ -296,7 +296,7 @@
 * fixes PHP some problems with packed download
 * adds support for tarred downloads
 * changes crumb image for folders with an index file
-* adds `index.php` to use h5ai in non-Apache environments
+* adds `index.php` to use finix in non-Apache environments
 * switches from [Datejs](http://www.datejs.com) to [Moment.js](http://momentjs.com)
 * adds [underscore.js](http://underscorejs.org)
 * fixes mousewheel problems, updates [jQuery.mousewheel](https://github.com/brandonaaron/jquery-mousewheel) to 3.0.6
@@ -315,7 +315,7 @@
 * updates design
 * improves zipped download
 * adds support for zipped download of htaccess restricted files
-* changes h5ai.htaccess
+* changes finix.htaccess
 * custom headers/footers are now optional and disabled by default
 * fixes problems with folder recognition in the JS version
 * fixes include problems in PHP version
@@ -331,7 +331,7 @@
 
 ## v0.17 - *2011-11-28*
 
-* h5ai is now located in `_finix` to reduce collisions
+* finix is now located in `_finix` to reduce collisions
 * switches from HTML5 Boilerplate reset to normalization
 * adds some style changes for small devices
 * configuration (options, types, translations) now via `config.js`
@@ -393,7 +393,7 @@
 
 ## v0.13.2 - *2011-08-12*
 
-* changes in `/h5ai/.htaccess` ... PHP configuration ...
+* changes in `/finix/.htaccess` ... PHP configuration ...
 
 
 ## v0.13.1 - *2011-08-12*
@@ -412,7 +412,7 @@
 * adds language selector to the bottom bar
 * quotes keys in `options.js` to make it valid json
 * changes value of option `lang` from `undefined` to `null`
-* adds some new keys to `h5aiLangs`
+* adds some new keys to `finixLangs`
 * adds browser caching rules for css and js
 * adds `pt` translation by [Jonnathan](https://github.com/jonnsl)
 * adds `bg` translation by George Andonov
@@ -456,9 +456,9 @@
 ## v0.10 - *2011-07-24*
 
 * fixes problems with XAMPP on Windows (see `dot.htaccess` comments for instructions)
-* fixes tree fade-in-fade-out effect for small displays ([issue #6](https://github.com/lrsjng/h5ai/issues/6))
-* adds custom scrollbar to tree ([issue #6](https://github.com/lrsjng/h5ai/issues/6))
-* fixes broken links caused by URI encoding/decoding ([issue #9](https://github.com/lrsjng/h5ai/issues/9))
+* fixes tree fade-in-fade-out effect for small displays ([issue #6](https://github.com/lrsjng/finix/issues/6))
+* adds custom scrollbar to tree ([issue #6](https://github.com/lrsjng/finix/issues/6))
+* fixes broken links caused by URI encoding/decoding ([issue #9](https://github.com/lrsjng/finix/issues/9))
 * adds "empty" to localization (hope Google Translate did a good job here)
 
 

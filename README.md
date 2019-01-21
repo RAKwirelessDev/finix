@@ -1,4 +1,4 @@
-# h5ai
+# finix
 
 [![license][license-img]][github] [![web][web-img]][web] [![github][github-img]][github]
 
@@ -17,7 +17,7 @@ A modern HTTP web server index for Apache httpd, lighttpd, nginx and Cherokee.
 ## Build
 
 There are installation ready packages for the latest [releases][release] and
-[dev builds][develop]. But to build **h5ai** yourself either `git clone` or
+[dev builds][develop]. But to build **finix** yourself either `git clone` or
 download the repository. From within the root folder run the following
 commands to find a fresh zipball in folder `build` (tested on linux only,
 requires [`node 6.0+`][node] to be installed).
@@ -55,18 +55,18 @@ THE SOFTWARE.
 
 ## References
 
-**h5ai** profits from other projects, all of them licensed under the MIT license
+**finix** profits from other projects, all of them licensed under the MIT license
 too. Exceptions are some [Material Design icons][material-design-icons] (CC BY 4.0).
 
 
-[web]: https://larsjung.de/h5ai/
-[github]: https://github.com/lrsjng/h5ai
-[github-issues]: https://github.com/lrsjng/h5ai/issues
-[release]: https://release.larsjung.de/h5ai/
-[develop]: https://release.larsjung.de/h5ai/develop/
+[web]: https://larsjung.de/finix/
+[github]: https://github.com/lrsjng/finix
+[github-issues]: https://github.com/lrsjng/finix/issues
+[release]: https://release.larsjung.de/finix/
+[develop]: https://release.larsjung.de/finix/develop/
 [node]: https://nodejs.org
 [material-design-icons]: https://github.com/google/material-design-icons
 
 [license-img]: https://img.shields.io/badge/license-MIT-a0a060.svg?style=flat-square
-[web-img]: https://img.shields.io/badge/web-larsjung.de/h5ai-a0a060.svg?style=flat-square
-[github-img]: https://img.shields.io/badge/github-lrsjng/h5ai-a0a060.svg?style=flat-square
+[web-img]: https://img.shields.io/badge/web-larsjung.de/finix-a0a060.svg?style=flat-square
+[github-img]: https://img.shields.io/badge/github-lrsjng/finix-a0a060.svg?style=flat-square
