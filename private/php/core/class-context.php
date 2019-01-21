@@ -11,11 +11,13 @@ class Context {
     private $passhash;
 
     public function __construct($session, $request, $setup) {
+        global $config;
+
         $this->session = $session;
         $this->request = $request;
         $this->setup = $setup;
 
-        $this->options = Json::load($this->setup->get('CONF_PATH') . '/options.json');
+        $this->options = $config;
 
         $this->passhash = $this->query_option('passhash', '');
         $this->options['hasCustomPasshash'] = strcasecmp($this->passhash, Context::$DEFAULT_PASSHASH) !== 0;
