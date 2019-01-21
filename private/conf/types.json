@@ -1,4 +1,3 @@
-/* finix - https://larsjung.de/finix/ */
 {
     "ar":               ["*.tar.bz2", "*.crx"],
     "ar-apk":           ["*.apk"],
