@@ -9,7 +9,7 @@ class Bootstrap {
         setlocale(LC_CTYPE, 'en_US.UTF-8');
         date_default_timezone_set(@date_default_timezone_get());
         session_start();
-        require __DIR__ . '/../../conf/config.php';
+        require __DIR__ . '/../conf/config.php';
 
         echo json_encode($config);
         exit;
