@@ -305,7 +305,7 @@
     - ignorecase: boolean, ignore case
     */
     "search": {
-        "enabled": false,
+        "enabled": true,
         "advanced": true,
         "debounceTime": 300,
         "ignorecase": true
@@ -319,7 +319,7 @@
     - checkboxes: boolean, show a checkbox on mouse over item
     */
     "select": {
-        "enabled": false,
+        "enabled": true,
         "clickndrag": true,
         "checkboxes": true
     },
