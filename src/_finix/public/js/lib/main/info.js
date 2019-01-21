@@ -48,7 +48,7 @@ const addTests = () => {
     );
 
     addTest(
-        'Options parsable', 'File <code>options.json</code> is readable and syntax is correct',
+        'Options parsable', 'File <code>config.php</code> is readable and syntax is correct',
         config.options !== null
     );
 
