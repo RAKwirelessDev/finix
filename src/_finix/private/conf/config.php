@@ -177,7 +177,7 @@ const _CONFIG_ = [
     - qrColor: string, QR-Code fill color
     */
     "info" => [
-        "enabled" => false,
+        "enabled" => true,
         "show" => false,
         "qrcode" => true,
         "qrFill" => "#999",
