@@ -71,7 +71,7 @@ class Setup {
     private function add_app_metadata() {
         $this->set('NAME', 'h5ai');
         $this->set('VERSION', H5AI_VERSION);
-        $this->set('FILE_PREFIX', '_h5ai');
+        $this->set('FILE_PREFIX', '_finix');
     }
 
     private function add_server_metadata_and_check() {

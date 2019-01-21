@@ -15,7 +15,7 @@
 
     Additional script and style tags added to all pages. Paths not beginning
     with "http://", "https://" or "/" will be looked up relative to
-    "_h5ai/public/ext/" (no check for existence).
+    "_finix/public/ext/" (no check for existence).
 
     - scripts: array of strings
     - styles: array of strings
@@ -55,7 +55,7 @@
         is given the view size is fixed and the selector buttons are hidden.
         The user selected view size is also stored local in modern browsers
         so that it will be persistent.
-    - theme: string, name of one of the folders in "_h5ai/images/themes", defaults to "default"
+    - theme: string, name of one of the folders in "_finix/images/themes", defaults to "default"
     - unmanaged: array of strings, don't manage folders containing one of those files
     - unmanagedInNewWindow: boolean, open unmanaged links in new window/tab
     */
@@ -66,7 +66,7 @@
         "fastBrowsing": true,
         "fonts": ["Ubuntu", "Roboto", "Helvetica", "Arial", "sans-serif"],
         "fontsMono": ["Ubuntu Mono", "Monaco", "Lucida Sans Typewriter", "monospace"],
-        "hidden": ["^\\.", "^_h5ai"],
+        "hidden": ["^\\.", "^_finix"],
         "hideFolders": false,
         "hideIf403": true,
         "hideParentFolder": false,
@@ -103,9 +103,9 @@
 
     /*
     Allow customized header and footer files.
-    First checks for files "_h5ai.header.html" and "_h5ai.footer.html" in the current directory.
+    First checks for files "_finix.header.html" and "_finix.footer.html" in the current directory.
     If not successful it checks all parent directories (starting in the current directory) for
-    files "_h5ai.headers.html" and "_h5ai.footers.html".
+    files "_finix.headers.html" and "_finix.footers.html".
     Note the different filenames: "header" (only current) - "headers" (current and sub directories)!
     The file's content will be placed inside a <div/> tag above/below the main content.
     If a file's extension is ".md" instead of ".html" its content will be interpreted as markdown.
@@ -189,7 +189,7 @@
     },
 
     /*
-    Localization, for example "en", "de" etc. - see "_h5ai/conf/l10n" folder for
+    Localization, for example "en", "de" etc. - see "_finix/conf/l10n" folder for
     possible values. Adjust it to your needs. If lang is not found
     it defaults to "en".
 
@@ -344,7 +344,7 @@
     },
 
     /*
-    Show thumbnails for image files. Needs the "/_h5ai/cache" folder to be
+    Show thumbnails for image files. Needs the "/_finix/cache" folder to be
     writable for the web Server.
 
     - img: array of strings

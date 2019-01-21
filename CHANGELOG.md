@@ -37,8 +37,8 @@
 ## v0.28.0 - *2015-12-19*
 
 * now require PHP 5.5.0+
-* change index path to `/_h5ai/public/index.php`
-* now only `/_h5ai/public/` needs to be web-accessible
+* change index path to `/_finix/public/index.php`
+* now only `/_finix/public/` needs to be web-accessible
 * add support for custom script and style additions
 * add options to set font families
 * add search
@@ -80,7 +80,7 @@
 * improve PDF thumbnail quality
 * improve drag-select
 * improve image preview
-* prevent listing `_h5ai` folder and subfolders
+* prevent listing `_finix` folder and subfolders
 * update build process, now uses [`mkr`](https://larsjung.de/mkr/) and [`fQuery`](https://larsjung.de/fquery/)
 * update `jQuery` to 2.1.3
 * update `jQuery.qrcode` to 0.11.0
@@ -184,7 +184,7 @@
 * fixes `setParentFolderLabels = false`
 * fixes shell-arg and RegExp escape issues
 * cleans code
-* updates info page `/_h5ai`
+* updates info page `/_finix`
 * adds `aiff` to `audio` types
 * adds `da` translation by Ronnie Milbo
 * updates to `pl` translation by Mark
@@ -277,7 +277,7 @@
 * adds support for lighttpd, nginx and cherokee and maybe other webservers with PHP
 * adds folder size in PHP version via shell `du`
 * fixes some localization problems
-* updates info page at `/_h5ai/`
+* updates info page at `/_finix/`
 * switches to JSHint
 
 
@@ -290,7 +290,7 @@
 * removes hash changes since they break logical browser history
 * fixes thumbnail size for portrait images in icon view
 * fixes problems with file type recognition
-* adds an info page at `/_h5ai/`
+* adds an info page at `/_finix/`
 * sort order is preserved while browsing
 * removes PHP error messages on thumbnail generation
 * fixes PHP some problems with packed download
@@ -331,7 +331,7 @@
 
 ## v0.17 - *2011-11-28*
 
-* h5ai is now located in `_h5ai` to reduce collisions
+* h5ai is now located in `_finix` to reduce collisions
 * switches from HTML5 Boilerplate reset to normalization
 * adds some style changes for small devices
 * configuration (options, types, translations) now via `config.js`
