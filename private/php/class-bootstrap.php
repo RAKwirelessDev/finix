@@ -9,7 +9,8 @@ class Bootstrap {
         setlocale(LC_CTYPE, 'en_US.UTF-8');
         date_default_timezone_set(@date_default_timezone_get());
         session_start();
-        require __DIR__ . '/../conf/config.php';
+        echo file_get_contents(__DIR__ . '/../../conf/config.php');
+        exit;
 
         $session = new Session($_SESSION);
         $request = new Request($_REQUEST, file_get_contents('php://input'));
