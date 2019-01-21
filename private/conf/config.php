@@ -1,6 +1,6 @@
 <?php
 
-$config_options = (object) [
+$config_options = [
 
     /*
     Password hash.
@@ -20,7 +20,7 @@ $config_options = (object) [
     - scripts: array of strings
     - styles: array of strings
     */
-    "resources" => (object) [
+    "resources" => [
         "scripts" => [],
         "styles" => [
             "//fonts.googleapis.com/css?family=Ubuntu:300,400,700%7CUbuntu+Mono:400,700"
@@ -57,7 +57,7 @@ $config_options = (object) [
     - unmanaged: array of strings, don't manage folders containing one of those files
     - unmanagedInNewWindow: boolean, open unmanaged links in new window/tab
     */
-    "view" => (object) [
+    "view" => [
         "binaryPrefix" => false,
         "disableSidebar" => false,
         "fallbackMode" => false,
@@ -85,7 +85,7 @@ $config_options = (object) [
 
     - interval: number, update interval in milliseconds, at least 1000
     */
-    "autorefresh" => (object) [
+    "autorefresh" => [
         "enabled" => false,
         "interval" => 5000
     ],
@@ -93,7 +93,7 @@ $config_options = (object) [
     /*
     Show a clickable breadcrumb.
     */
-    "crumb" => (object) [
+    "crumb" => [
         "enabled" => true
     ],
 
@@ -106,7 +106,7 @@ $config_options = (object) [
     The file's content will be placed inside a <div/> tag above/below the main content.
     If a file's extension is ".md" instead of ".html" its content will be interpreted as markdown.
     */
-    "custom" => (object) [
+    "custom" => [
         "enabled" => true
     ],
 
@@ -118,7 +118,7 @@ $config_options = (object) [
     - packageName: string, basename of the download package, null for current filename or foldername
     - alwaysVisible: boolean, always show download button (defaults to download the current folder)
     */
-    "download" => (object) [
+    "download" => [
         "enabled" => true,
         "type" => "shell-zip",
         "packageName" => null,
@@ -138,7 +138,7 @@ $config_options = (object) [
     - debounceTime: number, debounce wait time in milliseconds
     - ignorecase: boolean, ignore case
     */
-    "filter" => (object) [
+    "filter" => [
         "enabled" => false,
         "advanced" => true,
         "debounceTime" => 100,
@@ -153,7 +153,7 @@ $config_options = (object) [
 
     - type: string, "php" (sloooow) or "shell-du" (sloow)
     */
-    "foldersize" => (object) [
+    "foldersize" => [
         "enabled" => false,
         "type" => "php"
     ],
@@ -164,7 +164,7 @@ $config_options = (object) [
 
     - id: string, account ID
     */
-    "google-analytics-ua" => (object) [
+    "google-analytics-ua" => [
         "enabled" => false,
         "id" => "UA-000000-0"
     ],
@@ -176,7 +176,7 @@ $config_options = (object) [
     - qrcode: boolean, show a QR-Code
     - qrColor: string, QR-Code fill color
     */
-    "info" => (object) [
+    "info" => [
         "enabled" => false,
         "show" => false,
         "qrcode" => true,
@@ -192,7 +192,7 @@ $config_options = (object) [
     - lang: string, default language
     - useBroserLang: boolean, try to use browser language
     */
-    "l10n" => (object) [
+    "l10n" => [
         "enabled" => true,
         "lang" => "en",
         "useBrowserLang" => true
@@ -204,7 +204,7 @@ $config_options = (object) [
     - baseURL: string, do not include the protocol, e.g. "mydomain.tld/piwik"
     - idSite: number
     */
-    "piwik-analytics" => (object) [
+    "piwik-analytics" => [
         "enabled" => false,
         "baseURL" => "some/url",
         "idSite" => 1
@@ -216,7 +216,7 @@ $config_options = (object) [
     - autoplay: start playing as soon as ready
     - types: array of strings
     */
-    "preview-aud" => (object) [
+    "preview-aud" => [
         "enabled" => true,
         "autoplay" => true,
         "types" => ["aud"]
@@ -228,7 +228,7 @@ $config_options = (object) [
     - types: array of strings
     - size: number, sample size, or false for original size
     */
-    "preview-img" => (object) [
+    "preview-img" => [
         "enabled" => true,
         "size" => false,
         "types" => ["img", "img-bmp", "img-gif", "img-ico", "img-jpg", "img-png", "img-raw", "img-svg"]
@@ -245,9 +245,9 @@ $config_options = (object) [
 
     - styles: dict string to int, maps types to styles
     */
-    "preview-txt" => (object) [
+    "preview-txt" => [
         "enabled" => true,
-        "styles" => (object) [
+        "styles" => [
             "txt" => 1,
             "txt-authors" => 1,
             "txt-c" => 3,
@@ -281,7 +281,7 @@ $config_options = (object) [
     - autoplay: start playing as soon as ready
     - types: array of strings
     */
-    "preview-vid" => (object) [
+    "preview-vid" => [
         "enabled" => true,
         "autoplay" => true,
         "types" => ["vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"]
@@ -300,7 +300,7 @@ $config_options = (object) [
     - debounceTime: number, debounce wait time in milliseconds
     - ignorecase: boolean, ignore case
     */
-    "search" => (object) [
+    "search" => [
         "enabled" => true,
         "advanced" => true,
         "debounceTime" => 300,
@@ -314,7 +314,7 @@ $config_options = (object) [
     - clickndrag: boolean, allow first mouse button + drag selection
     - checkboxes: boolean, show a checkbox on mouse over item
     */
-    "select" => (object) [
+    "select" => [
         "enabled" => true,
         "clickndrag" => true,
         "checkboxes" => true
@@ -330,7 +330,7 @@ $config_options = (object) [
     - natural: boolean, use natural sort order
     - folders: number, where to place folders, 0 for "top", 1 for "in place", 2 for "bottom"
     */
-    "sort" => (object) [
+    "sort" => [
         "enabled" => true,
         "column" => 0,
         "reverse" => false,
@@ -351,7 +351,7 @@ $config_options = (object) [
     - exif: boolean, use included EXIF thumbs if possible
     - chunksize: int, number of thumbs per request
     */
-    "thumbnails" => (object) [
+    "thumbnails" => [
         "enabled" => true,
         "img" => ["img-bmp", "img-gif", "img-ico", "img-jpg", "img-png"],
         "mov" => ["vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"],
@@ -365,7 +365,7 @@ $config_options = (object) [
     /*
     Replace window title with current breadcrumb.
     */
-    "title" => (object) [
+    "title" => [
         "enabled" => true
     ],
 
@@ -378,7 +378,7 @@ $config_options = (object) [
     - naturalSort: boolean, use natural sort order for folders
     - ignorecase: boolean, sort ignorecase
     */
-    "tree" => (object) [
+    "tree" => [
         "enabled" => true,
         "show" => true,
         "maxSubfolders" => 50,
