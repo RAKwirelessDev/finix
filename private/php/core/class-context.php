@@ -15,8 +15,7 @@ class Context {
         $this->request = $request;
         $this->setup = $setup;
 
-        require_once $this->setup->get('CONF_PATH') . '/config.php';
-        $this->options = $config_options;
+        $this->options = _CONFIG_;
 
         $this->passhash = $this->query_option('passhash', '');
         $this->options['hasCustomPasshash'] = strcasecmp($this->passhash, Context::$DEFAULT_PASSHASH) !== 0;

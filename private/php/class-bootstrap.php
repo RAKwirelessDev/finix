@@ -13,6 +13,9 @@ class Bootstrap {
         $session = new Session($_SESSION);
         $request = new Request($_REQUEST, file_get_contents('php://input'));
         $setup = new Setup($request->query_boolean('refresh', false));
+
+        require_once $setup->get('CONF_PATH') . '/config.php';
+        
         $context = new Context($session, $request, $setup);
 
         if ($context->is_api_request()) {

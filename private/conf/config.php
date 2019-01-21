@@ -1,6 +1,6 @@
 <?php
 
-$config_options = [
+const _CONFIG_ = [
 
     /*
     Password hash.
