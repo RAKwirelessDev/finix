@@ -139,7 +139,7 @@ const _CONFIG_ = [
     - ignorecase: boolean, ignore case
     */
     "filter" => [
-        "enabled" => false,
+        "enabled" => true,
         "advanced" => true,
         "debounceTime" => 100,
         "ignorecase" => true
