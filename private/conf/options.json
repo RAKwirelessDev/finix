@@ -1,14 +1,14 @@
-<?php
-
-const _CONFIG_ = [
-
+/* finix v1.0.0 - https://github.com/RAKWirelessDev/finix */
+{
     /*
     Password hash.
 
     SHA512 hash of the info page password, the preset password is the empty string.
     Online hash generator: http://md5hashing.net/hashing/sha512
     */
-    "passhash" => "disabled",
+    "passhash": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+
+
 
     /*
     Resources.
@@ -20,12 +20,14 @@ const _CONFIG_ = [
     - scripts: array of strings
     - styles: array of strings
     */
-    "resources" => [
-        "scripts" => [],
-        "styles" => [
+    "resources": {
+        "scripts": [],
+        "styles": [
             "//fonts.googleapis.com/css?family=Ubuntu:300,400,700%7CUbuntu+Mono:400,700"
         ]
-    ],
+    },
+
+
 
     /*
     General view options.
@@ -57,26 +59,28 @@ const _CONFIG_ = [
     - unmanaged: array of strings, don't manage folders containing one of those files
     - unmanagedInNewWindow: boolean, open unmanaged links in new window/tab
     */
-    "view" => [
-        "binaryPrefix" => false,
-        "disableSidebar" => false,
-        "fallbackMode" => false,
-        "fastBrowsing" => true,
-        "fonts" => ["Ubuntu", "Roboto", "Helvetica", "Arial", "sans-serif"],
-        "fontsMono" => ["Ubuntu Mono", "Monaco", "Lucida Sans Typewriter", "monospace"],
-        "hidden" => ["^\\.", "^_finix"],
-        "hideFolders" => false,
-        "hideIf403" => true,
-        "hideParentFolder" => false,
-        "maxIconSize" => 40,
-        "modes" => ["details", "grid", "icons"],
-        "modeToggle" => false,
-        "setParentFolderLabels" => true,
-        "sizes" => [20, 40, 60, 80, 100, 140, 180, 220, 260, 300],
-        "theme" => "comity",
-        "unmanaged" => ["index.html", "index.htm", "index.php"],
-        "unmanagedInNewWindow" => false
-    ],
+    "view": {
+        "binaryPrefix": false,
+        "disableSidebar": false,
+        "fallbackMode": false,
+        "fastBrowsing": true,
+        "fonts": ["Ubuntu", "Roboto", "Helvetica", "Arial", "sans-serif"],
+        "fontsMono": ["Ubuntu Mono", "Monaco", "Lucida Sans Typewriter", "monospace"],
+        "hidden": ["^\\.", "^_finix"],
+        "hideFolders": false,
+        "hideIf403": true,
+        "hideParentFolder": false,
+        "maxIconSize": 40,
+        "modes": ["details", "grid", "icons"],
+        "modeToggle": false,
+        "setParentFolderLabels": true,
+        "sizes": [20, 40, 60, 80, 100, 140, 180, 220, 260, 300],
+        "theme": "comity",
+        "unmanaged": ["index.html", "index.htm", "index.php"],
+        "unmanagedInNewWindow": false
+    },
+
+
 
     /*** Extensions (in alphabetical order) ***/
 
@@ -85,17 +89,17 @@ const _CONFIG_ = [
 
     - interval: number, update interval in milliseconds, at least 1000
     */
-    "autorefresh" => [
-        "enabled" => false,
-        "interval" => 5000
-    ],
+    "autorefresh": {
+        "enabled": false,
+        "interval": 5000
+    },
 
     /*
     Show a clickable breadcrumb.
     */
-    "crumb" => [
-        "enabled" => true
-    ],
+    "crumb": {
+        "enabled": true
+    },
 
     /*
     Allow customized header and footer files.
@@ -106,9 +110,9 @@ const _CONFIG_ = [
     The file's content will be placed inside a <div/> tag above/below the main content.
     If a file's extension is ".md" instead of ".html" its content will be interpreted as markdown.
     */
-    "custom" => [
-        "enabled" => true
-    ],
+    "custom": {
+        "enabled": true
+    },
 
     /*
     Enable packaged download of selected entries.
@@ -118,12 +122,12 @@ const _CONFIG_ = [
     - packageName: string, basename of the download package, null for current filename or foldername
     - alwaysVisible: boolean, always show download button (defaults to download the current folder)
     */
-    "download" => [
-        "enabled" => true,
-        "type" => "shell-zip",
-        "packageName" => null,
-        "alwaysVisible" => false
-    ],
+    "download": {
+        "enabled": true,
+        "type": "php-tar",
+        "packageName": null,
+        "alwaysVisible": false
+    },
 
     /*
     Allow filtering the displayed files and folders in current folder.
@@ -138,12 +142,12 @@ const _CONFIG_ = [
     - debounceTime: number, debounce wait time in milliseconds
     - ignorecase: boolean, ignore case
     */
-    "filter" => [
-        "enabled" => true,
-        "advanced" => true,
-        "debounceTime" => 100,
-        "ignorecase" => true
-    ],
+    "filter": {
+        "enabled": false,
+        "advanced": true,
+        "debounceTime": 100,
+        "ignorecase": true
+    },
 
     /*
     Calc the size of folders.
@@ -153,10 +157,10 @@ const _CONFIG_ = [
 
     - type: string, "php" (sloooow) or "shell-du" (sloow)
     */
-    "foldersize" => [
-        "enabled" => false,
-        "type" => "php"
-    ],
+    "foldersize": {
+        "enabled": true,
+        "type": "php"
+    },
 
     /*
     Adds Google Universial Analytics asynchronous tracking code.
@@ -164,10 +168,10 @@ const _CONFIG_ = [
 
     - id: string, account ID
     */
-    "google-analytics-ua" => [
-        "enabled" => false,
-        "id" => "UA-000000-0"
-    ],
+    "google-analytics-ua": {
+        "enabled": false,
+        "id": "UA-000000-0"
+    },
 
     /*
     Enable a generic info side bar.
@@ -176,13 +180,13 @@ const _CONFIG_ = [
     - qrcode: boolean, show a QR-Code
     - qrColor: string, QR-Code fill color
     */
-    "info" => [
-        "enabled" => false,
-        "show" => false,
-        "qrcode" => true,
-        "qrFill" => "#999",
-        "qrBack" => "#fff"
-    ],
+    "info": {
+        "enabled": true,
+        "show": false,
+        "qrcode": true,
+        "qrFill": "#999",
+        "qrBack": "#fff"
+    },
 
     /*
     Localization, for example "en", "de" etc. - see "_finix/conf/l10n" folder for
@@ -192,11 +196,11 @@ const _CONFIG_ = [
     - lang: string, default language
     - useBroserLang: boolean, try to use browser language
     */
-    "l10n" => [
-        "enabled" => true,
-        "lang" => "en",
-        "useBrowserLang" => true
-    ],
+    "l10n": {
+        "enabled": true,
+        "lang": "en",
+        "useBrowserLang": true
+    },
 
     /*
     Adds Piwik tracker javascript code.
@@ -204,11 +208,11 @@ const _CONFIG_ = [
     - baseURL: string, do not include the protocol, e.g. "mydomain.tld/piwik"
     - idSite: number
     */
-    "piwik-analytics" => [
-        "enabled" => false,
-        "baseURL" => "some/url",
-        "idSite" => 1
-    ],
+    "piwik-analytics": {
+        "enabled": false,
+        "baseURL": "some/url",
+        "idSite": 1
+    },
 
     /*
     Play a audio preview on click.
@@ -216,11 +220,11 @@ const _CONFIG_ = [
     - autoplay: start playing as soon as ready
     - types: array of strings
     */
-    "preview-aud" => [
-        "enabled" => true,
-        "autoplay" => true,
-        "types" => ["aud"]
-    ],
+    "preview-aud": {
+        "enabled": true,
+        "autoplay": true,
+        "types": ["aud"]
+    },
 
     /*
     Show an image preview on click.
@@ -228,11 +232,11 @@ const _CONFIG_ = [
     - types: array of strings
     - size: number, sample size, or false for original size
     */
-    "preview-img" => [
-        "enabled" => true,
-        "size" => false,
-        "types" => ["img", "img-bmp", "img-gif", "img-ico", "img-jpg", "img-png", "img-raw", "img-svg"]
-    ],
+    "preview-img": {
+        "enabled": true,
+        "size": false,
+        "types": ["img", "img-bmp", "img-gif", "img-ico", "img-jpg", "img-png", "img-raw", "img-svg"]
+    },
 
     /*
     Show text file preview on click.
@@ -245,35 +249,35 @@ const _CONFIG_ = [
 
     - styles: dict string to int, maps types to styles
     */
-    "preview-txt" => [
-        "enabled" => true,
-        "styles" => [
-            "txt" => 1,
-            "txt-authors" => 1,
-            "txt-c" => 3,
-            "txt-cpp" => 3,
-            "txt-css" => 3,
-            "txt-diff" => 1,
-            "txt-go" => 3,
-            "txt-h" => 3,
-            "txt-hpp" => 3,
-            "txt-install" => 1,
-            "txt-js" => 3,
-            "txt-json" => 3,
-            "txt-less" => 3,
-            "txt-license" => 1,
-            "txt-log" => 1,
-            "txt-makefile" => 1,
-            "txt-md" => 2,
-            "txt-py" => 3,
-            "txt-rb" => 3,
-            "txt-readme" => 1,
-            "txt-rtf" => 1,
-            "txt-rust" => 3,
-            "txt-script" => 3,
-            "txt-xml" => 1
-        ]
-    ],
+    "preview-txt": {
+        "enabled": true,
+        "styles": {
+            "txt": 1,
+            "txt-authors": 1,
+            "txt-c": 3,
+            "txt-cpp": 3,
+            "txt-css": 3,
+            "txt-diff": 1,
+            "txt-go": 3,
+            "txt-h": 3,
+            "txt-hpp": 3,
+            "txt-install": 1,
+            "txt-js": 3,
+            "txt-json": 3,
+            "txt-less": 3,
+            "txt-license": 1,
+            "txt-log": 1,
+            "txt-makefile": 1,
+            "txt-md": 2,
+            "txt-py": 3,
+            "txt-rb": 3,
+            "txt-readme": 1,
+            "txt-rtf": 1,
+            "txt-rust": 3,
+            "txt-script": 3,
+            "txt-xml": 1
+        }
+    },
 
     /*
     Play a video preview on click.
@@ -281,11 +285,11 @@ const _CONFIG_ = [
     - autoplay: start playing as soon as ready
     - types: array of strings
     */
-    "preview-vid" => [
-        "enabled" => true,
-        "autoplay" => true,
-        "types" => ["vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"]
-    ],
+    "preview-vid": {
+        "enabled": true,
+        "autoplay": true,
+        "types": ["vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"]
+    },
 
     /*
     Allow searching files and folders in and below current folder.
@@ -300,12 +304,12 @@ const _CONFIG_ = [
     - debounceTime: number, debounce wait time in milliseconds
     - ignorecase: boolean, ignore case
     */
-    "search" => [
-        "enabled" => true,
-        "advanced" => true,
-        "debounceTime" => 300,
-        "ignorecase" => true
-    ],
+    "search": {
+        "enabled": false,
+        "advanced": true,
+        "debounceTime": 300,
+        "ignorecase": true
+    },
 
     /*
     Make entries selectable.
@@ -314,11 +318,11 @@ const _CONFIG_ = [
     - clickndrag: boolean, allow first mouse button + drag selection
     - checkboxes: boolean, show a checkbox on mouse over item
     */
-    "select" => [
-        "enabled" => true,
-        "clickndrag" => true,
-        "checkboxes" => true
-    ],
+    "select": {
+        "enabled": true,
+        "clickndrag": true,
+        "checkboxes": true
+    },
 
     /*
     Default sort order.
@@ -330,14 +334,14 @@ const _CONFIG_ = [
     - natural: boolean, use natural sort order
     - folders: number, where to place folders, 0 for "top", 1 for "in place", 2 for "bottom"
     */
-    "sort" => [
-        "enabled" => true,
-        "column" => 0,
-        "reverse" => false,
-        "ignorecase" => true,
-        "natural" => true,
-        "folders" => 0
-    ],
+    "sort": {
+        "enabled": true,
+        "column": 0,
+        "reverse": false,
+        "ignorecase": true,
+        "natural": true,
+        "folders": 0
+    },
 
     /*
     Show thumbnails for image files. Needs the "/_finix/cache" folder to be
@@ -351,23 +355,23 @@ const _CONFIG_ = [
     - exif: boolean, use included EXIF thumbs if possible
     - chunksize: int, number of thumbs per request
     */
-    "thumbnails" => [
-        "enabled" => true,
-        "img" => ["img-bmp", "img-gif", "img-ico", "img-jpg", "img-png"],
-        "mov" => ["vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"],
-        "doc" => ["x-pdf", "x-ps"],
-        "delay" => 1,
-        "size" => 240,
-        "exif" => false,
-        "chunksize" => 20
-    ],
+    "thumbnails": {
+        "enabled": true,
+        "img": ["img-bmp", "img-gif", "img-ico", "img-jpg", "img-png"],
+        "mov": ["vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"],
+        "doc": ["x-pdf", "x-ps"],
+        "delay": 1,
+        "size": 240,
+        "exif": false,
+        "chunksize": 20
+    },
 
     /*
     Replace window title with current breadcrumb.
     */
-    "title" => [
-        "enabled" => true
-    ],
+    "title": {
+        "enabled": true
+    },
 
     /*
     Show a folder tree.
@@ -378,12 +382,11 @@ const _CONFIG_ = [
     - naturalSort: boolean, use natural sort order for folders
     - ignorecase: boolean, sort ignorecase
     */
-    "tree" => [
-        "enabled" => true,
-        "show" => true,
-        "maxSubfolders" => 50,
-        "naturalSort" => true,
-        "ignorecase" => true
-    ]
-
-];
+    "tree": {
+        "enabled": true,
+        "show": true,
+        "maxSubfolders": 50,
+        "naturalSort": true,
+        "ignorecase": true
+    }
+}
