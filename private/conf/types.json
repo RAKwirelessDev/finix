@@ -1,4 +1,4 @@
-/* finix v1.0.0 - https://github.com/RAKWirelessDev/finix */
+/* finix v1.4.0 - https://github.com/RAKWirelessDev/finix */
 {
     "ar":               ["*.tar.bz2", "*.crx"],
     "ar-apk":           ["*.apk"],

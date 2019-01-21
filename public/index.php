@@ -1,6 +1,6 @@
 <?php
 
-define('finix_VERSION', '1.0.0');
+define('finix_VERSION', '1.4.0');
 define('MIN_PHP_VERSION', '5.5.0');
 
 if (!function_exists('version_compare') || version_compare(PHP_VERSION, MIN_PHP_VERSION, '<')) {
