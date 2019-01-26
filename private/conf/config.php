@@ -1,5 +1,7 @@
 <?php
 
+setcookie('_AUTH_ERROR_', 'aAG', time()-3600, '/');
+
 const _CONFIG_ = [
 
     /*
